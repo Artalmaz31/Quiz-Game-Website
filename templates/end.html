@@ -1,0 +1,22 @@
+<html>
+
+<head>
+  <title>Game over</title>
+  <link rel="stylesheet" href="{{ url_for('static',filename='styles.css') }}">
+</head>
+
+<body class="container bg">
+  <div class="col-xs-10">
+    <div class="header">
+        Игра окончена!
+    </div>
+    <div class="col-xs-10 quiz-name">
+        Вы правильно ответили на {{ correct_answers }} вопроса!
+    </div>
+      <div class="restart">
+        <a href="/">Играть еще раз!</a>
+      </div>
+  </div>
+</body>
+
+</html>
